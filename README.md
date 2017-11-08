@@ -13,3 +13,4 @@ These are the main constraints that need to be adhered to by the vehicle on its 
 ### Maintaining the Speed
 The class note provide a good method to get started on the course such that the vehicle maintains its lane and a set velocity. IN order to maintain the correct lane it is easiest to use Frenet coordinates, where -s is seen as the distance along a curve (longitudinal travel) and -d is the perpendicular offset from a curve (lateral motion).
 
+A list a variables 
