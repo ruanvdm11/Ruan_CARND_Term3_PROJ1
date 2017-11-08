@@ -21,3 +21,14 @@ The next step to focus on is to ensure that the vehicle does not drive into othe
 A formula was set up that applies a certain deceleration depending on how far the vehicle is away from the self driving car. If a car is closer than 25 metres from us then an initial deceleration of 0.13 m/s^2 is applied. When the vehicle infront is less than 8 metres aways the vehicle decelerates at 0.45 m/s^2. This also means that if a vehicle suddenl drives infront of the self-driving vehcile it will react depending on the distance.
 
 The other important longitudinal part is to maintain the correct velociy that does not exceed the speed limit. If there are no vehicle infront of our vehicle it will accelerate at 0.33 m/s^2 until it reaches roughly 50 mph.
+
+### Lateral Control
+If a vehicle determines that there is another vehicle getting too close it signals that an overatke is required. The overtake also make suse of the sensor fusion data but now it evaluates the adjacent lanes.
+
+Firstly, the function determines if there is a reasonable 'gap' in the lane to the left. A reasonable gap means that if lane change is make that the closest car infront of our vehicles is greater than 27 metres away and the closest vehicle to the rear is 5 metres away. 
+
+Secondly, if the change cannot be made to the left lane the same checks are done to determine if a lane change to the right is possible.
+
+Lastly, if the vehicle is not in the left most lane. It will determine whether there is sufficient space to move to the left (fast) lane.
+
+Please see the below video that shows a successful run of the track.
