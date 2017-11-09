@@ -1,5 +1,8 @@
 # Udacity Self-Driving Car Nanodegree
 
+[//]: # (Image References)
+[image1]: https://raw.githubusercontent.com/ruanvdm11/Ruan_CARND_Term3_PROJ1/master/Reference_Images/Video_screenshot.JPG "Video1"
+
 ## Term 3 Project 1: Path Planning
 
 ### Introduction
