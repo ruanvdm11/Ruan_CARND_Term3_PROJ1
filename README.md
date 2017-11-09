@@ -36,4 +36,4 @@ Lastly, if the vehicle is not in the left most lane. It will determine whether t
 
 Please see the below video that shows a successful run of the track.
 
-[![alt text][image1]](https://youtu.be/q8RFOOAbhjQ)
+[![alt text][image1]](https://youtu.be/yu87EzoiUrY)
