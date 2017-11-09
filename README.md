@@ -35,3 +35,5 @@ Secondly, if the change cannot be made to the left lane the same checks are done
 Lastly, if the vehicle is not in the left most lane. It will determine whether there is sufficient space to move to the left (fast) lane. If the closest vehicle (ahead of our car) in the lane to our left is 40 metres away and we are 5 metres ahead of a vehicle in the lane to our left; the vehicle will move to the left.
 
 Please see the below video that shows a successful run of the track.
+
+[![alt text][image1]](https://youtu.be/q8RFOOAbhjQ)
