@@ -18,9 +18,9 @@ An array of values are created that represents x and y coordinates. The simulato
 ### Longitudinal Control
 The next step to focus on is to ensure that the vehicle does not drive into other vehicles from the rear. The vehicle is equiped with some instrumentation that allows us to create some sensor-fused data that allows us to know the whereabouts of the other vehicles. By knowing the Frenet coordinates of the other vehicles a filter can quickly be set up that can distnguish between cars in different lanes. Then it is possible to search for the closest car infront of us (defined by a larger -s values than our current -s value) and make certain decisions based on proximity of the other vehicle.
 
-A formula was set up that applies a certain deceleration depending on how far the vehicle is away from the self driving car. If a car is closer than 25 metres from us then an initial deceleration of 0.13 m/s^2 is applied. When the vehicle infront is less than 8 metres aways the vehicle decelerates at 0.45 m/s^2. This also means that if a vehicle suddenl drives infront of the self-driving vehcile it will react depending on the distance.
+A formula was set up that applies a certain deceleration depending on how far the vehicle is away from the self driving car. If a car is closer than 25 metres from us then an initial deceleration of 0.65 m/s^2 is applied. When the vehicle infront is less than 8 metres aways the vehicle decelerates at 2.25 m/s^2. This also means that if a vehicle suddenl drives infront of the self-driving vehcile it will react depending on the distance.
 
-The other important longitudinal part is to maintain the correct velociy that does not exceed the speed limit. If there are no vehicle infront of our vehicle it will accelerate at 0.33 m/s^2 until it reaches roughly 50 mph.
+The other important longitudinal part is to maintain the correct velociy that does not exceed the speed limit. If there are no vehicle infront of our vehicle it will accelerate at 1.65 m/s^2 until it reaches roughly 50 mph.
 
 ### Lateral Control
 If a vehicle determines that there is another vehicle getting too close it signals that an overatke is required. The overtake also make suse of the sensor fusion data but now it evaluates the adjacent lanes.
@@ -29,6 +29,6 @@ Firstly, the function determines if there is a reasonable 'gap' in the lane to t
 
 Secondly, if the change cannot be made to the left lane the same checks are done to determine if a lane change to the right is possible.
 
-Lastly, if the vehicle is not in the left most lane. It will determine whether there is sufficient space to move to the left (fast) lane.
+Lastly, if the vehicle is not in the left most lane. It will determine whether there is sufficient space to move to the left (fast) lane. If the closest vehicle (ahead of our car) in the lane to our left is 40 metres away and we are 5 metres ahead of a vehicle in the lane to our left; the vehicle will move to the left.
 
 Please see the below video that shows a successful run of the track.
